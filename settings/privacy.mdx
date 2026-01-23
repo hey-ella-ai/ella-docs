@@ -1,0 +1,84 @@
+---
+title: "Privacy"
+description: "Control how Ella handles your data and manage your transcription history."
+---
+
+Ella is designed with privacy in mind. Your voice data is processed securely and your transcriptions are stored locally on your device.
+
+<Frame>
+    <img src="/images/setting-privacy.png" alt="General Settings" />
+</Frame>
+
+## Data Storage
+
+All your transcription data is stored locally in a SQLite database on your Mac. Your transcriptions are never uploaded to external servers unless you explicitly share them.
+
+| Data Type | Storage Location | Retention |
+|-----------|-----------------|-----------|
+| Transcriptions | Local SQLite database | Until you delete them |
+| Settings | Local preferences file | Persistent |
+| Usage statistics | Local + cloud sync | For quota tracking |
+
+## Delete All Transcriptions
+
+You can permanently delete all locally stored transcriptions at any time.
+
+<Steps>
+  <Step title="Open Settings">
+    Click the Ella menu bar icon and select **Settings**.
+  </Step>
+
+  <Step title="Go to Privacy">
+    Navigate to the **Privacy** tab.
+  </Step>
+
+  <Step title="Delete Transcriptions">
+    Click **Delete All Transcripts**.
+  </Step>
+
+  <Step title="Confirm Deletion">
+    Review the confirmation dialog showing the number of transcripts that will be deleted, then confirm.
+  </Step>
+</Steps>
+
+<Warning>
+  **This action is permanent and cannot be undone.** All your locally stored transcriptions will be permanently deleted.
+</Warning>
+
+## Voice Data Handling
+
+Ella processes your voice data securely:
+
+- **During dictation**: Audio is captured and sent to our transcription service for processing
+- **After transcription**: Audio is immediately discarded — we do not store recordings
+- **Transcribed text**: Stored locally on your device only
+
+<Note>
+  Your voice recordings are never stored on our servers. Only the resulting text is saved locally on your Mac.
+</Note>
+
+## Analytics & Error Reporting
+
+Ella collects minimal analytics to improve the app experience:
+
+| Data Collected | Purpose | Contains Personal Data |
+|----------------|---------|----------------------|
+| App usage patterns | Improve features | No |
+| Error reports | Fix bugs | No |
+| Feature usage | Prioritize development | No |
+
+<Note>
+  Analytics never includes your transcription content. Only aggregate usage patterns and error information are collected to help improve Ella.
+</Note>
+
+
+## Related
+
+<CardGroup cols={2}>
+  <Card title="Privacy & Security" icon="shield" href="/support/privacy-security">
+    Learn more about our privacy practices
+  </Card>
+  <Card title="Account" icon="user" href="/settings/account">
+    Manage your account and data
+  </Card>
+</CardGroup>

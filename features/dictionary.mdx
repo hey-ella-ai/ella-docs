@@ -1,0 +1,231 @@
+---
+title: "Dictionary"
+description: "Teach Ella your unique terminology and create word replacement rules for better transcription accuracy."
+---
+
+Ella's dictionary lets you add custom vocabulary and create replacement rules to ensure accurate, personalized transcriptions.
+
+## Dictionary Features
+
+The dictionary has two main features:
+
+<CardGroup cols={2}>
+  <Card title="Custom Terminology" icon="book">
+    Add words and phrases Ella should recognize exactly as spelled — names, brands, technical terms, and jargon.
+  </Card>
+  <Card title="Word Replacement" icon="arrow-right-arrow-left">
+    Create rules to automatically replace one word or phrase with another during transcription.
+  </Card>
+</CardGroup>
+
+---
+
+## Custom Terminology
+
+Add words that Ella might not recognize or might transcribe incorrectly. These entries teach Ella the correct spelling and capitalization.
+
+### Why Use Custom Terminology?
+
+- **Names** — People, companies, products, places
+- **Technical terms** — Industry-specific vocabulary
+- **Brand names** — Proper capitalization and spelling
+- **Abbreviations** — Acronyms unique to your field
+- **Foreign words** — Non-English terms you use regularly
+
+<Tip>
+  Without dictionary entries, Ella might transcribe "Nguyen" as "Win" or "Anthropic" as "and thropic".
+</Tip>
+
+### Adding a Vocabulary Word
+
+<Steps>
+  <Step title="Open Dictionary">
+    Click the Ella menu bar icon → **Settings** → **Dictionary** tab.
+  </Step>
+
+  <Step title="Add New Entry">
+    Click the **Add New** button.
+  </Step>
+
+  <Step title="Enter the Word">
+    Type the word or phrase exactly as you want it transcribed, with correct spelling and capitalization.
+
+    <Frame>
+      <img src="/images/dictionary.png" alt="Entering a vocabulary word" />
+    </Frame>
+  </Step>
+
+  <Step title="Save">
+    Click the green checkmark to save. The entry is active immediately.
+  </Step>
+</Steps>
+
+### Examples
+
+| Entry | Why Add It |
+|-------|------------|
+| `Nguyen` | Common name often misheard |
+| `Anthropic` | Company name with unusual spelling |
+| `açaí` | Foreign word with special characters |
+| `McKinsey` | Unusual capitalization |
+| `HIPAA` | Acronym that should stay uppercase |
+| `Figma` | Product name |
+
+---
+
+## Word Replacement
+
+Create rules to automatically replace words or phrases during transcription. This is useful for expanding abbreviations, correcting common mistakes, or using shorthand.
+
+### Why Use Word Replacement?
+
+- **Expand abbreviations** — Say "BRB" and get "be right back"
+- **Use shorthand** — Say "sig" and get your full signature
+- **Auto-correct** — Fix words you commonly misspeak
+- **Formatting** — Replace spoken versions with formatted text
+
+### Adding a Replacement Rule
+
+<Steps>
+  <Step title="Open Dictionary">
+    Click the Ella menu bar icon → **Settings** → **Dictionary** tab.
+  </Step>
+
+  <Step title="Add New Entry">
+    Click the **Add New** button.
+  </Step>
+
+  <Step title="Enable Replacement">
+    Check the **"This is a replacement rule"** checkbox.
+
+  </Step>
+
+  <Step title="Enter Original and Replacement">
+    Two fields appear:
+    - **Original word** — What you'll say
+    - **Replacement** — What Ella will type
+
+    <Frame>
+      <img src="/images/word-replacement.png" alt="Entering a replacement rule" />
+    </Frame>
+  </Step>
+
+  <Step title="Save">
+    Click the green checkmark to save.
+  </Step>
+</Steps>
+
+### Examples
+
+| Original | Replacement | Use Case |
+|----------|-------------|----------|
+| `BRB` | `be right back` | Expand abbreviation |
+| `sig` | `Best regards, Sarah Mitchell` | Quick signature |
+| `addr` | `742 Evergreen Terrace, Springfield` | Address shorthand |
+| `myemail` | `sarah.mitchell@company.com` | Email shorthand |
+| `teh` | `the` | Auto-correct typo |
+| `dont` | `don't` | Add punctuation |
+
+<Tip>
+  Replacement rules are powerful for creating shortcuts. Say a short trigger word and get a full phrase, address, or signature inserted.
+</Tip>
+
+---
+
+## Managing Entries
+
+### View All Entries
+
+All your dictionary entries appear in a list. Vocabulary words show just the word, while replacement rules show the original → replacement format.
+
+### Edit an Entry
+
+1. Hover over the entry you want to edit
+2. Click the pencil icon that appears
+3. Make your changes
+4. Click the green checkmark to save
+
+### Delete an Entry
+
+1. Hover over the entry you want to delete
+2. Click the trash icon that appears
+3. Confirm deletion in the dialog
+
+---
+
+## Best Practices
+
+### For Custom Terminology
+
+<CardGroup cols={2}>
+  <Card title="Do" icon="check">
+    - Use exact capitalization: `PostgreSQL` not `postgresql`
+    - Add names as people spell them: `Siobhan`, `Björk`
+    - Include company names: `Shopify`, `Atlassian`
+  </Card>
+  <Card title="Avoid" icon="xmark">
+    - Common words that transcribe fine already
+    - Multiple variations of the same word
+    - Very long phrases (use replacement rules instead)
+  </Card>
+</CardGroup>
+
+### For Replacement Rules
+
+<CardGroup cols={2}>
+  <Card title="Do" icon="check">
+    - Use short, memorable trigger words
+    - Create rules for frequently typed text
+    - Use unique triggers that won't occur naturally
+  </Card>
+  <Card title="Avoid" icon="xmark">
+    - Trigger words you use in normal speech
+    - Overly complex replacement text
+    - Rules that conflict with each other
+  </Card>
+</CardGroup>
+
+### Choosing Between Features
+
+| If you want to... | Use |
+|-------------------|-----|
+| Help Ella recognize a word correctly | Custom Terminology |
+| Replace what you say with different text | Word Replacement |
+| Fix capitalization of a name or brand | Custom Terminology |
+| Expand an abbreviation | Word Replacement |
+| Add a technical term | Custom Terminology |
+| Create a text shortcut | Word Replacement |
+
+---
+
+## Troubleshooting
+
+<AccordionGroup>
+  <Accordion title="Word still not transcribing correctly">
+    1. Verify the entry is saved in your dictionary
+    2. Check the spelling and capitalization
+    3. Try speaking the word more slowly and clearly
+    4. If it's a name, try adding phonetic variations
+  </Accordion>
+
+  <Accordion title="Replacement not working">
+    1. Make sure you checked "This is a replacement rule"
+    2. Verify both the original and replacement fields are filled
+    3. Speak the trigger word exactly as entered
+    4. Check for conflicting entries
+  </Accordion>
+
+  <Accordion title="Entry won't save">
+    1. Ensure the word field is not empty
+    2. For replacement rules, both fields must have content
+    3. Try removing special characters if present
+  </Accordion>
+</AccordionGroup>
+
+---
+
+## Related
+
+<Card title="Settings" icon="gear" href="/settings/general">
+  Explore all customization options
+</Card>

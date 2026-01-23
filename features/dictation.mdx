@@ -1,0 +1,258 @@
+---
+title: "Dictation"
+description: "Learn about Ella's three dictation modes and how to configure your hotkeys."
+---
+
+Ella offers three ways to start and control dictation, letting you choose the workflow that fits your needs.
+
+## Dictation Modes
+
+<CardGroup cols={3}>
+  <Card title="Push to Talk" icon="hand-pointer">
+    Hold a key to dictate, release to stop
+  </Card>
+  <Card title="Hands-Free Mode" icon="toggle-on">
+    Press once to start, press again to stop
+  </Card>
+  <Card title="Menu Bar" icon="bars">
+    Click to start recording from the menu bar
+  </Card>
+</CardGroup>
+
+---
+
+### Push to Talk
+
+Push to Talk is the default mode and works like a walkie-talkie — hold the activation key while speaking, release when done.
+
+**Default Hotkey:** `Fn`
+
+**How It Works:**
+1. **Press and hold** your Push to Talk hotkey
+2. **Speak** your text naturally
+3. **Release** the key to stop recording and insert text
+
+**Best For:**
+- Quick, short dictations
+- Environments with background noise
+- Users who want precise control over recording
+- Dictating during meetings or calls
+
+---
+
+### Hands-Free Mode
+
+Hands-Free Mode lets you press once to start recording and press again to stop — no need to hold the key.
+
+**Default Hotkey:** `Ctrl + Space`
+
+**How It Works:**
+1. **Press** your Hands-Free hotkey once to start recording
+2. **Speak** your text naturally
+3. **Press** the hotkey again to stop recording and insert text
+
+**Best For:**
+- Longer dictations
+- Reducing hand strain
+- Writing lengthy documents or emails
+- Users who prefer toggle controls
+
+---
+
+### Menu Bar
+
+You can also start and stop recording directly from Ella's menu bar icon — no hotkey required.
+
+**How It Works:**
+1. **Click** the Ella icon in your menu bar
+2. **Click** "Start Recording"
+3. **Speak** your text naturally
+4. **Click** "Stop Recording" (or use your Hands-Free hotkey)
+
+{/* PLACEHOLDER: Screenshot of menu bar with Start Recording option */}
+<Frame>
+  <img src="/images/menubar.png" alt="Menu bar recording option" />
+</Frame>
+
+**Best For:**
+- When you can't remember your hotkey
+- Occasional dictation without setting up hotkeys
+- Testing that Ella is working correctly
+
+<Tip>
+  The menu bar option shows your Hands-Free hotkey as a shortcut hint, so you can learn it while using the menu.
+</Tip>
+
+---
+
+### Comparing Modes
+
+| Feature | Push to Talk | Hands-Free | Menu Bar |
+|---------|--------------|------------|----------|
+| Default Hotkey | `Fn` | `Ctrl + Space` | Click menu |
+| Activation | Hold key | Press once | Click |
+| Deactivation | Release key | Press again | Click |
+| Hands-free | No | Yes | Yes |
+| Best for noise | Excellent | Good | Good |
+| Best for long text | Fair | Excellent | Good |
+
+---
+
+## Configuring Hotkeys
+
+You can customize both hotkeys to fit your workflow.
+
+### Changing Your Hotkeys
+
+<Steps>
+  <Step title="Open Settings">
+    Click the Ella icon in your menu bar and select **Settings**.
+  </Step>
+
+  <Step title="Find Hotkey Settings">
+    In the **General** tab, you'll see both hotkey options:
+    - **Push to Talk Hotkey**
+    - **Hands-Free Mode Hotkey**
+
+    {/* PLACEHOLDER: Screenshot of hotkey settings */}
+    <Frame>
+      <img src="/images/setting-general.png" alt="Hotkey configuration in settings" />
+    </Frame>
+  </Step>
+
+  <Step title="Record New Hotkey">
+    Click the current hotkey badge, then press your desired key or key combination.
+  </Step>
+
+  <Step title="Confirm">
+    Your new hotkey is saved automatically. Test it to make sure it works.
+  </Step>
+</Steps>
+
+### Supported Keys
+
+**Single Keys:**
+
+| Key Type | Examples |
+|----------|----------|
+| Function keys | Fn, F1-F12 |
+| Modifier keys | Control, Option, Command, Shift |
+| Special keys | Caps Lock, Right Shift |
+
+**Key Combinations:**
+
+You can combine modifier keys for custom shortcuts:
+- Control + Space
+- Option + Shift
+- Command + Option
+- Control + Option
+
+<Warning>
+  Avoid combinations already used by macOS or your frequently used apps (e.g., Command+C, Command+V, Command+Space for Spotlight).
+</Warning>
+
+### Popular Hotkey Choices
+
+| Hotkey | Pros | Cons |
+|--------|------|------|
+| `Fn` | Default, easy reach, rarely conflicts | Not available on all keyboards |
+| `Ctrl + Space` | Default for Hands-Free, familiar | May conflict with Spotlight |
+| `Caps Lock` | Large key, easy to press | Need to disable system Caps Lock |
+| `Right Option` | Easy with right hand | May conflict with special characters |
+| `F5` | Dedicated key | Requires reaching |
+
+### Using Caps Lock as Hotkey
+
+Caps Lock makes an excellent dictation key due to its size and position. To use it:
+
+<Steps>
+  <Step title="Disable System Caps Lock">
+    1. Open **System Settings** → **Keyboard**
+    2. Click **Keyboard Shortcuts** → **Modifier Keys**
+    3. Set Caps Lock to "No Action"
+  </Step>
+
+  <Step title="Set in Ella">
+    Open Ella Settings and click the hotkey badge to record Caps Lock as your hotkey.
+  </Step>
+</Steps>
+
+---
+
+## Accessibility Permission
+
+Global hotkeys require Accessibility permission to work when Ella isn't the active application.
+
+### Granting Permission
+
+If your hotkeys aren't working:
+
+1. Open **System Settings** → **Privacy & Security** → **Accessibility**
+2. Find **Ella** in the list
+3. Toggle it **ON**
+4. Restart Ella
+
+<Warning>
+  Without Accessibility permission, hotkeys will only work when the Ella window is focused.
+</Warning>
+
+---
+
+## Audio Settings
+
+Ella includes audio optimization features to improve your dictation experience.
+
+### Mic Boost
+
+Automatically increases microphone volume during recording for clearer audio capture.
+
+- **Location:** Settings → General → Mic Boost
+- **Default:** On
+
+### Lower System Audio
+
+Automatically reduces system audio when Ella starts recording, making it easier to focus on speaking.
+
+- **Location:** Settings → General → Lower System Audio
+- **Default:** On
+
+---
+
+## Troubleshooting
+
+<AccordionGroup>
+  <Accordion title="Hotkey doesn't work">
+    1. Ensure Ella has **Accessibility permission** in System Settings
+    2. Check if another app is using the same hotkey
+    3. Try a different key combination
+    4. Restart Ella
+  </Accordion>
+
+  <Accordion title="Hotkey only works when Ella is focused">
+    This means Accessibility permission isn't granted:
+    1. Open **System Settings** → **Privacy & Security** → **Accessibility**
+    2. Enable Ella in the list
+    3. Restart Ella
+  </Accordion>
+
+  <Accordion title="Recording doesn't stop automatically">
+    Unlike some voice apps, Ella doesn't use voice activity detection. You must:
+    - Release the key (Push to Talk)
+    - Press the hotkey again (Hands-Free)
+    - Click Stop Recording (Menu Bar)
+  </Accordion>
+
+  <Accordion title="Caps Lock hotkey not working">
+    1. Verify Caps Lock is set to "No Action" in System Settings → Keyboard → Modifier Keys
+    2. Re-record Caps Lock as your hotkey in Ella Settings
+    3. Restart Ella
+  </Accordion>
+</AccordionGroup>
+
+---
+
+## Related
+
+<Card title="General Settings" icon="gear" href="/settings/general">
+  Configure hotkeys and audio settings
+</Card>

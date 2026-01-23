@@ -1,0 +1,160 @@
+---
+title: "General"
+description: "Configure Ella's core dictation settings including hotkeys, microphone, and audio options."
+---
+
+Configure how Ella captures and transcribes your voice with these core settings.
+
+## Accessing Settings
+
+Click the Ella icon in your menu bar and select **Settings**, or select it from the side navigation menu in the main window.
+
+## Settings Overview
+
+<CardGroup cols={3}>
+  <Card title="General" icon="gear">
+    Hotkeys, microphone, audio
+  </Card>
+  <Card title="System" icon="sliders" href="/settings/system">
+    Startup, dock, notifications
+  </Card>
+  <Card title="Privacy" icon="shield" href="/settings/privacy">
+    Data and history
+  </Card>
+  <Card title="Account" icon="user" href="/settings/account">
+    Profile and login
+  </Card>
+  <Card title="Plans & Billing" icon="credit-card" href="/settings/plans-pricing">
+    Subscription management
+  </Card>
+</CardGroup>
+
+---
+
+<Frame>
+    <img src="/images/setting-general.png" alt="General Settings" />
+</Frame>
+    
+## Hotkeys
+
+Configure the keyboard shortcuts that activate Ella's dictation.
+
+### Push to Talk Hotkey
+
+The primary hotkey for dictation. Hold this key while speaking, then release to stop recording and insert your transcription.
+
+**Default**: Right Option (⌥)
+
+<Steps>
+  <Step title="Click Record">
+    In the Hotkey section, click the **Push to Talk** field.
+  </Step>
+
+  <Step title="Press Your Key">
+    Press your desired key or key combination.
+  </Step>
+
+  <Step title="Confirm">
+    The new hotkey is saved automatically.
+  </Step>
+</Steps>
+
+### Hands-Free Mode Hotkey
+
+An alternative hotkey for toggle-style dictation. Press once to start recording, press again to stop.
+
+**Default**: Not set
+
+<Note>
+  Hands-Free Mode is useful for longer dictations where holding a key would be tiring.
+</Note>
+
+### Accessibility Permission
+
+Ella requires Accessibility permission on macOS to register global hotkeys that work in any application.
+
+If hotkeys aren't working:
+
+1. Check the permission status in General settings
+2. Click **Grant Permission** if prompted
+3. Or manually enable in **System Settings → Privacy & Security → Accessibility**
+
+<Warning>
+  Without Accessibility permission, Ella's hotkeys will only work when the Ella window is focused.
+</Warning>
+
+---
+
+## Audio & Microphone
+
+Configure your audio input settings for optimal transcription quality.
+
+### Preferred Microphone
+
+Select which microphone Ella uses for dictation.
+
+| Option | Description |
+|--------|-------------|
+| Auto-detect | Uses your Mac's default input device |
+| Specific device | Choose a specific microphone from the dropdown |
+
+<Tip>
+  If you use an external microphone, select it specifically rather than relying on auto-detect to ensure consistent quality.
+</Tip>
+
+### Mic Boost
+
+Automatically increases your microphone volume during recording for clearer audio capture.
+
+| Setting | Effect |
+|---------|--------|
+| Enabled | Boosts mic input level when recording |
+| Disabled | Uses normal microphone levels |
+
+<Note>
+  Enable Mic Boost if your transcriptions are missing words or seem quieter than expected.
+</Note>
+
+### Lower System Audio
+
+Automatically reduces system audio volume while recording to minimize background noise in your transcriptions.
+
+| Setting | Effect |
+|---------|--------|
+| Enabled | Lowers other app audio during dictation |
+| Disabled | System audio remains unchanged |
+
+This is helpful when you're listening to music or videos while dictating.
+
+---
+
+## App Updates
+
+Keep Ella up to date with the latest features and improvements.
+
+### Check for Updates
+
+Click **Check for Updates** to manually check if a newer version is available.
+
+Ella also checks for updates automatically every 24 hours.
+
+### Update Process
+
+When an update is available:
+
+1. You'll see a notification with the new version number
+2. Click **Update** to download and install
+3. Ella will restart with the new version
+
+---
+
+## Related
+
+<CardGroup cols={2}>
+  <Card title="Dictation" icon="microphone" href="/features/dictation">
+    Learn about dictation modes and hotkeys
+  </Card>
+  <Card title="System" icon="sliders" href="/settings/system">
+    Configure startup and notifications
+  </Card>
+</CardGroup>

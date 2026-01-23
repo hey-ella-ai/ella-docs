@@ -1,0 +1,213 @@
+---
+title: "Privacy & Security"
+description: "How Ella protects your data and respects your privacy."
+---
+
+At Ella, privacy isn't an afterthought — it's a core principle. Here's how we protect your data.
+
+## Our Privacy Principles
+
+<CardGroup cols={3}>
+  <Card title="Minimal Collection" icon="minimize">
+    We only collect what's necessary
+  </Card>
+  <Card title="No Audio Storage" icon="microphone-slash">
+    Your voice is never stored
+  </Card>
+  <Card title="Local First" icon="laptop">
+    Your data stays on your device
+  </Card>
+</CardGroup>
+
+## How Ella Handles Your Data
+
+### Voice Audio
+
+| What Happens | Details |
+|--------------|---------|
+| Captured | Only while you're actively dictating |
+| Transmitted | Encrypted, sent to transcription service |
+| Processed | Converted to text |
+| **Stored** | **Never** — audio is discarded immediately |
+
+<Info>
+  We do not record, store, or retain your voice data. Audio exists only during the brief moment of transcription processing.
+</Info>
+
+### Transcribed Text
+
+| What Happens | Details |
+|--------------|---------|
+| Processed | On secure servers |
+| Returned | To your device for insertion |
+| Server Storage | **None** — text is not retained |
+| Local Storage | Optional history on your device only |
+
+### Transcription History
+
+Your transcription history is stored **locally on your Mac**:
+
+- Location: `~/Library/Application Support/com.ella.desktop/`
+- Encryption: Protected by your Mac's security
+- Access: Only you can access it
+- Cloud sync: **None** — stays on your device
+
+<Note>
+  If you uninstall Ella and delete this folder, all local history is permanently removed.
+</Note>
+
+## Data We Collect
+
+### Account Information
+
+| Data | Purpose | Storage |
+|------|---------|---------|
+| Email address | Account identification, communication | Encrypted on servers |
+| Name (optional) | Personalization | Encrypted on servers |
+| Payment info | Subscription processing | Handled by payment provider Stripe (never touches our servers) |
+
+### Usage Analytics
+
+We collect anonymous usage data to improve Ella:
+
+| Collected | Not Collected |
+|-----------|---------------|
+| Feature usage patterns | Transcription content |
+| Error reports | Voice recordings |
+| App performance metrics | Personal identifiers |
+| Aggregate statistics | Browsing history |
+
+<Accordion title="What does anonymous analytics include?">
+  - Which features are used (e.g., "hotkey activated")
+  - Session duration
+  - Error types (not content)
+  - Device type and OS version
+  - Geographic region (country level)
+
+  This data cannot identify you or reveal your transcription content.
+</Accordion>
+
+### Error Reporting
+
+When Ella crashes or encounters errors:
+
+| Sent | Not Sent |
+|------|----------|
+| Stack trace | Transcription text |
+| App version | Audio data |
+| OS version | Personal files |
+| Device type | Account details |
+
+## Security Measures
+
+### Data Transmission
+
+- **Encryption**: All data transmitted over HTTPS/TLS 1.3
+- **Certificate pinning**: Prevents man-in-the-middle attacks
+- **Secure endpoints**: Industry-standard cloud infrastructure
+
+### Authentication
+
+- **Enterprise-grade authentication**: Industry-leading authentication provider
+- **PKCE flow**: Secure OAuth implementation
+- **Keychain storage**: Credentials stored in macOS Keychain
+- **Session management**: Secure token handling
+
+### Infrastructure
+
+- **Cloud providers**: SOC 2 compliant infrastructure
+- **Data centers**: Geographically distributed, physically secured
+- **Access controls**: Strict internal access policies
+- **Regular audits**: Security assessments and penetration testing
+
+## Your Privacy Controls
+
+### In Ella Settings
+
+Navigate to **Settings → Privacy** to manage your data:
+
+- **Delete All Transcripts** — Permanently remove all locally stored transcription history from your device
+
+<Frame>
+  <img src="/images/setting-privacy.png" alt="Privacy controls in Ella settings" />
+</Frame>
+
+### Data Requests
+
+You have the right to:
+
+- **Access** your data 
+- **Delete** your account and all associated data
+
+## Third-Party Services
+
+Ella partners with trusted third-party services to provide core functionality. All partners have been vetted for privacy compliance and security standards.
+
+| Purpose | Data Shared | How It's Protected |
+|---------|-------------|-------------------|
+| Transcription & Formatting | Audio & Text (not stored) | Encrypted, immediately discarded |
+| Authentication | Email, password | Industry-standard encryption |
+| Payment processing | Payment details | PCI-compliant, never touches our servers |
+| Analytics | Anonymous usage | No personal identifiers |
+| Error tracking | Crash reports | No transcription content |
+
+We carefully select partners who share our commitment to privacy. Each service uses data only for its stated purpose and is contractually bound to protect your information.
+
+## Frequently Asked Questions
+
+<AccordionGroup>
+  <Accordion title="Can Ella employees see my transcriptions?">
+    No. Transcription content is never stored on our servers. Your local history is only on your device. We have no technical ability to access your transcriptions.
+  </Accordion>
+
+  <Accordion title="Is my voice used to train AI models?">
+    No. Your voice data is never used for training. It's processed for transcription and immediately discarded.
+  </Accordion>
+
+  <Accordion title="What happens to my data if I delete my account?">
+    Your account and all associated data on our servers and local data are permanently deleted.
+  </Accordion>
+
+  <Accordion title="Is Ella HIPAA compliant?">
+    For healthcare use cases requiring HIPAA compliance, please contact us to discuss your specific requirements and our Business Associate Agreement.
+  </Accordion>
+
+  <Accordion title="Does Ella share data with advertisers?">
+    No. We never sell or share your data with advertisers. We have no advertising business model.
+  </Accordion>
+
+  <Accordion title="How long is my account data retained?">
+    Account data is retained while your account is active. After deletion, data is removed immediately.
+  </Accordion>
+</AccordionGroup>
+
+## Contact Us About Privacy
+
+Questions about privacy? Reach out:
+
+- **Email**: support@heyella.co
+
+We take privacy seriously and are happy to answer any questions.
+
+## Updates to Privacy Practices
+
+We may update our privacy practices. Significant changes will be communicated via:
+
+- Email notification
+- In-app notice
+- Updated documentation
+
+---
+
+*Last updated: January 2025*
+
+## Related
+
+<CardGroup cols={2}>
+  <Card title="Settings" icon="gear" href="/settings/general">
+    Configure your privacy preferences
+  </Card>
+  <Card title="FAQ" icon="circle-question" href="/support/faq">
+    More common questions
+  </Card>
+</CardGroup>

@@ -1,0 +1,214 @@
+---
+title: "FAQ"
+description: "Frequently asked questions about Ella."
+---
+
+Find answers to the most common questions about Ella.
+
+## General Questions
+
+<AccordionGroup>
+  <Accordion title="What is Ella?">
+    Ella is a voice-to-text application for macOS that lets you dictate text in any application. Simply speak naturally, and Ella converts your speech to text and inserts it at your cursor position.
+  </Accordion>
+
+  <Accordion title="How does Ella work?">
+    1. You activate Ella with a hotkey (default: `Fn` for Push to Talk)
+    2. Ella captures your voice through your microphone
+    3. Your speech is sent securely to our transcription service
+    4. The transcribed text is inserted where your cursor is positioned
+
+    The entire process takes just seconds.
+  </Accordion>
+
+  <Accordion title="Is Ella free?">
+    Ella offers a free Basic plan with 3,000 words per week. For unlimited dictation, you can upgrade to Pro for $8/month or $80/year. See [Plans & Pricing](/settings/plans-pricing) for details.
+  </Accordion>
+
+  <Accordion title="What platforms does Ella support?">
+    Ella currently supports **macOS** (both Apple Silicon and Intel Macs). Windows support is planned for the future.
+  </Accordion>
+
+  <Accordion title="What macOS version do I need?">
+    Ella requires macOS 13.1 (Ventura) or later.
+  </Accordion>
+</AccordionGroup>
+
+## Features & Usage
+
+<AccordionGroup>
+  <Accordion title="Does Ella work in every application?">
+    Yes! Ella works in any application where you can type text — browsers, email clients, code editors, messaging apps, documents, notes, and more.
+  </Accordion>
+
+  <Accordion title="Can I use Ella offline?">
+    Ella requires an internet connection for transcription. However, there's a brief offline grace period that allows limited dictation when connectivity is temporarily lost.
+  </Accordion>
+
+  <Accordion title="What languages does Ella support?">
+    Ella currently supports English. Additional language support is coming soon.
+  </Accordion>
+
+  <Accordion title="How do I add punctuation?">
+    Our smart formatter will automatically add punctuation based on context. 
+  </Accordion>
+
+  <Accordion title="Can I customize the activation hotkey?">
+    Yes! Go to Settings → General to change your hotkey. You can use single keys (like Caps Lock) or key combinations. See [Dictation](/features/dictation).
+  </Accordion>
+
+  <Accordion title="What's the difference between dictation modes?">
+    - **Push to Talk**: Hold key to record, release to stop (default: `Fn`)
+    - **Hands-Free Mode**: Press once to start, press again to stop (default: `Ctrl + Space`)
+    - **Menu Bar**: Click "Start Recording" from the Ella menu bar icon
+
+    See [Dictation](/features/dictation) for detailed comparison.
+  </Accordion>
+
+  <Accordion title="Can I add custom words to Ella?">
+    Yes! Use the custom dictionary to add vocabulary words and replacement rules. Go to Settings → Dictionary → Add New. See [Dictionary](/features/dictionary).
+  </Accordion>
+</AccordionGroup>
+
+## Privacy & Security
+
+<AccordionGroup>
+  <Accordion title="Is my voice data stored?">
+    No. Audio is processed for transcription and immediately discarded. We don't store recordings of your voice.
+  </Accordion>
+
+  <Accordion title="Is my transcribed text stored?">
+    Transcription content is processed and returned to you but not stored on our servers. Your local transcription history is stored only on your device.
+  </Accordion>
+
+  <Accordion title="Who can access my transcriptions?">
+    Only you. Transcription history is stored locally on your Mac, not in the cloud. No one at Ella can see your transcriptions.
+  </Accordion>
+
+  <Accordion title="Is the transmission secure?">
+    Yes. All data is transmitted over encrypted HTTPS connections. We follow industry best practices for security.
+  </Accordion>
+
+  <Accordion title="What data does Ella collect?">
+    We collect minimal analytics data (usage patterns, error reports) to improve the product. This never includes transcription content. See [Privacy & Security](/support/privacy-security) for details.
+  </Accordion>
+</AccordionGroup>
+
+## Account & Billing
+
+<AccordionGroup>
+  <Accordion title="How do I create an account?">
+    When you first launch Ella, you'll be prompted to sign up. You can create an account using:
+    - **Google** — Sign in with your Google account
+    - **Email & Password** — Create an account with your email address
+  </Accordion>
+
+  <Accordion title="What payment methods do you accept?">
+    We accept all major credit cards (Visa, Mastercard, American Express, Discover) and Apple Pay through Stripe.
+  </Accordion>
+
+  <Accordion title="How do I upgrade to Pro?">
+    Go to Settings → Plans & Billing → Upgrade to Pro. Choose monthly or annual billing and complete payment.
+  </Accordion>
+
+  <Accordion title="Can I get a refund?">
+    Yes. We offer full refunds within 14 days of purchase. Contact support@heyella.co with your account email.
+  </Accordion>
+
+  <Accordion title="How do I cancel my subscription?">
+    Go to Settings → Plans & Billing → Manage Subscription → Cancel. You'll retain Pro access until the end of your billing period.
+  </Accordion>
+
+  <Accordion title="What happens when I reach my word limit?">
+    On the Basic plan, when you use 3,000 words in a week, dictation pauses until Sunday at midnight when it resets. You can upgrade to Pro for immediate unlimited access.
+  </Accordion>
+
+  <Accordion title="Do unused words roll over?">
+    No. The word limit resets each week regardless of usage. Unused words don't carry over.
+  </Accordion>
+</AccordionGroup>
+
+## Technical Questions
+
+<AccordionGroup>
+  <Accordion title="Why does Ella need Accessibility permission?">
+    Accessibility permission allows Ella to insert text at your cursor position in any application. Without it, Ella can't type text for you.
+  </Accordion>
+
+  <Accordion title="Why does Ella need Microphone permission?">
+    Microphone permission is required to capture your voice for transcription. Without it, Ella can't hear what you say.
+  </Accordion>
+
+  <Accordion title="Does Ella work with external microphones?">
+    Yes! You can select your preferred microphone in Settings → General. Ella supports USB mics, headsets, Bluetooth mics, and has an Auto-detect option that uses your system default.
+  </Accordion>
+
+  <Accordion title="How much internet bandwidth does Ella use?">
+    Ella uses minimal bandwidth. Audio is compressed before transmission. A typical 30-second dictation uses less than 100KB.
+  </Accordion>
+
+  <Accordion title="Will Ella slow down my Mac?">
+    No. Ella is designed to be lightweight. It uses minimal CPU and memory, even during active transcription.
+  </Accordion>
+</AccordionGroup>
+
+## Troubleshooting
+
+<AccordionGroup>
+  <Accordion title="Ella isn't transcribing my speech">
+    1. Check microphone permission in System Settings
+    2. Verify your mic is selected and working
+    3. Ensure you're holding the hotkey (Push-to-Talk mode)
+    4. Restart Ella
+
+    See [Troubleshooting](/support/troubleshooting) for more solutions.
+  </Accordion>
+
+  <Accordion title="Text isn't appearing where I want it">
+    1. Verify accessibility permission in System Settings
+    2. Make sure cursor is in a text field before dictating
+    3. Don't move cursor during transcription
+
+    See [Troubleshooting](/support/troubleshooting) for more help.
+  </Accordion>
+
+  <Accordion title="My hotkey isn't working">
+    1. Check accessibility permission
+    2. Verify the hotkey in Settings
+    3. Check for conflicts with other apps
+    4. Try a different hotkey
+
+    See [Dictation](/features/dictation) for configuration help.
+  </Accordion>
+</AccordionGroup>
+
+## Future & Roadmap
+
+<AccordionGroup>
+  <Accordion title="Is Windows support coming?">
+    Yes! Windows support is in development. Sign up for our newsletter at [heyella.co](https://www.heyella.co) to be notified when it's available.
+  </Accordion>
+
+  <Accordion title="Will there be a mobile app?">
+    We're exploring mobile options. Our focus is currently on making the Mac experience excellent.
+  </Accordion>
+
+  <Accordion title="Are more languages coming?">
+    Yes! Additional language support is planned. English is our priority, with other languages to follow.
+  </Accordion>
+
+  <Accordion title="Will there be an API?">
+    We don't currently offer a public API, but we're open to feedback on this. Contact us if you're interested.
+  </Accordion>
+</AccordionGroup>
+
+## Still Have Questions?
+
+<CardGroup cols={2}>
+  <Card title="Contact Support" icon="envelope" href="/support/contact">
+    Get personalized help
+  </Card>
+  <Card title="Troubleshooting" icon="wrench" href="/support/troubleshooting">
+    Solve common issues
+  </Card>
+</CardGroup>

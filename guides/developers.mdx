@@ -1,0 +1,254 @@
+---
+title: "Ella for Developers"
+description: "How software developers can use Ella to write code comments, documentation, messages, and more."
+---
+
+As a developer, you spend significant time typing — commit messages, code reviews, documentation, Slack messages, and emails. Ella helps you capture your thoughts faster while keeping your hands on the keyboard.
+
+## Why Developers Love Ella
+
+<CardGroup cols={2}>
+  <Card title="Stay in Flow" icon="keyboard">
+    Dictate without switching contexts
+  </Card>
+  <Card title="Document Faster" icon="file-lines">
+    Write docs at the speed of thought
+  </Card>
+  <Card title="Reduce RSI" icon="hand">
+    Give your wrists a break
+  </Card>
+  <Card title="Think Out Loud" icon="brain">
+    Verbalize complex problems
+  </Card>
+</CardGroup>
+
+## Common Developer Use Cases
+
+### Code Documentation
+
+Dictate comments and documentation without breaking your coding flow:
+
+> "Add a docstring to this function that explains it takes a user ID as input and returns the user's profile data including name, email, and subscription status"
+
+**Result:**
+```python
+def get_user_profile(user_id: str) -> UserProfile:
+    """
+    Retrieves a user's profile data from the database.
+
+    Args:
+        user_id: The unique identifier of the user.
+
+    Returns:
+        UserProfile containing the user's name, email,
+        and subscription status.
+    """
+```
+
+### Git Commit Messages
+
+Write descriptive commit messages quickly:
+
+> "Fix race condition in user authentication flow where token refresh could fail if multiple requests were made simultaneously"
+
+**Result:**
+```
+Fix race condition in user authentication flow where token
+refresh could fail if multiple requests were made simultaneously
+```
+
+### Code Reviews
+
+Provide thorough PR feedback:
+
+> "The implementation looks good overall. A few suggestions: consider extracting the validation logic into a separate function for reusability. Also, line 45 could benefit from early return to reduce nesting."
+
+### Slack & Team Communication
+
+Respond to teammates without context switching:
+
+> "Hey team, I've pushed the fix for the login bug. Can someone review PR 234? It's a small change to the auth middleware."
+
+### Meeting Notes
+
+Capture technical discussions:
+
+> "Decided to use PostgreSQL for the main database. Redis for caching. Deployment will be on AWS using ECS. Timeline is two weeks for MVP."
+
+## Developer-Specific Tips
+
+### Add Technical Terms to Dictionary
+
+Ella might not recognize technical terms out of the box. Add common ones to your dictionary:
+
+```
+PostgreSQL
+Kubernetes
+TypeScript
+React
+GraphQL
+MongoDB
+OAuth
+JWT
+API
+REST
+npm
+yarn
+webpack
+Docker
+AWS
+CI/CD
+```
+
+<Tip>
+  **How to add:** Settings → Dictionary → Add Word. [Learn more →](/customization/dictionary)
+</Tip>
+
+### Dictating Code Concepts
+
+When describing code, speak naturally:
+
+| You Say | Ella Transcribes |
+|---------|------------------|
+| "function foo that takes x and returns x plus one" | "function foo that takes x and returns x plus one" |
+| "array of strings" | "array of strings" |
+| "if user is null then return early" | "if user is null then return early" |
+
+<Note>
+  Ella transcribes your speech as natural language. For actual code syntax, you'll format it yourself or use AI coding assistants.
+</Note>
+
+### Optimal Hotkey Setup
+
+Most developers prefer these hotkey configurations:
+
+| Hotkey | Why |
+|--------|-----|
+| **Right Option** | Easy reach from home row |
+| **Caps Lock** | Large key, rarely used otherwise |
+| **F5** | Dedicated function key |
+
+### IDE Integration Workflow
+
+Ella works in any application, including your IDE:
+
+1. Position cursor where you want text
+2. Activate Ella with your hotkey
+3. Dictate your text
+4. Ella inserts at cursor position
+5. Format or edit as needed
+
+{/* PLACEHOLDER: Screenshot of Ella being used in VS Code */}
+<Frame>
+  <img src="/images/placeholder-ide-usage.png" alt="Using Ella in VS Code" />
+</Frame>
+
+## Workflow Examples
+
+### Writing README Files
+
+Instead of typing long README sections:
+
+> "This project is a REST API for managing user subscriptions. It supports creating, updating, and canceling subscriptions, and integrates with Stripe for payment processing. To get started, clone the repository, install dependencies with npm install, and run npm start."
+
+### Explaining Code Decisions
+
+For architecture decision records (ADRs):
+
+> "We chose Redis over Memcached because we need data persistence and support for complex data structures like sorted sets for our leaderboard feature."
+
+### Writing Technical Specs
+
+> "The authentication service will use JWT tokens with a 15-minute expiry. Refresh tokens will be stored in HTTP-only cookies with a 7-day expiry. We'll implement token rotation on each refresh to prevent replay attacks."
+
+## Best Practices
+
+### 1. Use Push-to-Talk for Short Inputs
+
+For commit messages and quick comments, Push-to-Talk gives you precise control.
+
+### 2. Use Toggle Mode for Documentation
+
+For longer documentation, Toggle mode lets you speak naturally without holding a key.
+
+### 3. Speak Punctuation When Needed
+
+> "The function returns a boolean period It returns true if the user is authenticated comma false otherwise period"
+
+**Result:** "The function returns a boolean. It returns true if the user is authenticated, false otherwise."
+
+### 4. Review Before Committing
+
+Always review dictated text before git commits or publishing documentation.
+
+### 5. Combine with AI Coding Tools
+
+Use Ella to describe what you want, then use AI coding assistants to generate the actual code:
+
+1. **Dictate intent**: "Create a function that validates email addresses using regex"
+2. **Use Copilot/Claude**: Let the AI write the code
+3. **Dictate review**: "This looks good but add error handling for null inputs"
+
+## Recommended Settings for Developers
+
+| Setting | Recommendation |
+|---------|----------------|
+| Mode | Push-to-Talk |
+| Hotkey | Right Option or Caps Lock |
+| VAD Sensitivity | Medium |
+| Sounds | Off (minimize distraction) |
+| History | Enabled (reference past dictations) |
+
+## Tools That Work Well with Ella
+
+<CardGroup cols={3}>
+  <Card title="VS Code" icon="code">
+    Primary IDE
+  </Card>
+  <Card title="Terminal" icon="terminal">
+    Command descriptions
+  </Card>
+  <Card title="Notion" icon="note-sticky">
+    Documentation
+  </Card>
+  <Card title="Slack" icon="comments">
+    Team chat
+  </Card>
+  <Card title="GitHub" icon="github">
+    PR descriptions
+  </Card>
+  <Card title="Linear" icon="list-check">
+    Issue tracking
+  </Card>
+</CardGroup>
+
+## Common Challenges & Solutions
+
+<AccordionGroup>
+  <Accordion title="Technical terms not recognized">
+    Add them to your custom dictionary. The more specific your dictionary, the better Ella performs on technical content.
+  </Accordion>
+
+  <Accordion title="Code syntax not formatted">
+    Ella transcribes natural language, not code syntax. Use AI assistants or format manually for actual code.
+  </Accordion>
+
+  <Accordion title="Background noise in open offices">
+    Use Push-to-Talk mode and a directional microphone. Consider noise-canceling earbuds with built-in mic.
+  </Accordion>
+
+  <Accordion title="Coworkers think you're talking to yourself">
+    Embrace it! Many developers find thinking out loud helps problem-solving. Or use Ella during focused work hours.
+  </Accordion>
+</AccordionGroup>
+
+## Related
+
+<CardGroup cols={2}>
+  <Card title="Custom Dictionary" icon="book" href="/customization/dictionary">
+    Add technical terminology
+  </Card>
+  <Card title="Global Hotkeys" icon="keyboard" href="/features/global-hotkeys">
+    Optimize your activation key
+  </Card>
+</CardGroup>

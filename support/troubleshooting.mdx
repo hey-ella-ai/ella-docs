@@ -1,0 +1,357 @@
+---
+title: "Troubleshooting"
+description: "Solutions to common issues with Ella."
+---
+
+Having trouble with Ella? Find solutions to common issues below.
+
+## System Requirements
+
+| Requirement | Minimum |
+|-------------|---------|
+| macOS | 13.1 (Ventura) or later |
+| Processor | Apple Silicon or Intel |
+| Internet | Required for transcription |
+| Permissions | Microphone and Accessibility |
+
+<Note>
+  Ella runs natively on Apple Silicon for best performance. Windows support is coming soon.
+</Note>
+
+---
+
+## Quick Fixes
+
+Before diving into specific issues, try these universal solutions:
+
+<Steps>
+  <Step title="Restart Ella">
+    Click the Ella menu bar icon → **Quit Ella**, then relaunch from Applications.
+  </Step>
+
+  <Step title="Check Permissions">
+    Go to **System Settings** → **Privacy & Security** and verify Ella has:
+    - ✓ Microphone access
+    - ✓ Accessibility access
+  </Step>
+
+  <Step title="Check for Updates">
+    Click Ella menu bar icon → **Check for Updates**. Install if available.
+  </Step>
+
+  <Step title="Restart Your Mac">
+    Sometimes a fresh start resolves mysterious issues.
+  </Step>
+</Steps>
+
+---
+
+## Installation Issues
+
+<AccordionGroup>
+  <Accordion title="Ella won't open on first launch">
+    **Cause:** macOS Gatekeeper is blocking the app.
+
+    **Solution:**
+    1. Open **System Settings** → **Privacy & Security**
+    2. Look for message about Ella being blocked
+    3. Click **Open Anyway**
+    4. Or right-click Ella in Applications → **Open**
+  </Accordion>
+
+  <Accordion title="'Ella is damaged' error">
+    **Cause:** Download was corrupted or incomplete.
+
+    **Solution:**
+    1. Delete the current Ella app
+    2. Clear browser cache
+    3. Download fresh from [heyella.co/download](https://www.heyella.co/download)
+    4. Verify the file before installing
+  </Accordion>
+
+  <Accordion title="App not appearing after installation">
+    **Solution:**
+    1. Check Applications folder directly (Finder → Go → Applications)
+    2. Search using Spotlight (Cmd + Space → "Ella")
+    3. Reinstall if not found
+  </Accordion>
+</AccordionGroup>
+
+---
+
+## Permission Issues
+
+<AccordionGroup>
+  <Accordion title="Microphone access denied">
+    **Symptoms:** Ella activates but doesn't hear you.
+
+    **Solution:**
+    1. Open **System Settings** → **Privacy & Security** → **Microphone**
+    2. Find Ella in the list
+    3. Toggle ON (if not present, quit and reopen Ella)
+    4. Restart Ella
+  </Accordion>
+
+  <Accordion title="Accessibility access denied">
+    **Symptoms:** Ella transcribes but doesn't insert text.
+
+    **Solution:**
+    1. Open **System Settings** → **Privacy & Security** → **Accessibility**
+    2. Click the lock icon and authenticate
+    3. Find Ella and toggle ON
+    4. If Ella isn't listed, click + and add it from Applications
+    5. Restart Ella
+
+    <Warning>
+      Without accessibility permission, Ella cannot insert text into applications.
+    </Warning>
+  </Accordion>
+
+  <Accordion title="Permissions were granted but still not working">
+    **Solution:**
+    1. Remove Ella from both permission lists
+    2. Quit Ella completely
+    3. Reopen Ella — it will prompt for permissions again
+    4. Grant permissions when prompted
+  </Accordion>
+</AccordionGroup>
+
+---
+
+## Hotkey Issues
+
+<AccordionGroup>
+  <Accordion title="Hotkey doesn't activate Ella">
+    **Possible causes:**
+    - Another app is capturing the hotkey
+    - Accessibility permission issue
+    - Hotkey not properly recorded
+
+    **Solutions:**
+    1. Check accessibility permission (see above)
+    2. Try a different hotkey in Settings
+    3. Check if another app uses the same key
+    4. Restart Ella
+  </Accordion>
+
+  <Accordion title="Hotkey conflicts with another app">
+    **Solution:**
+    1. Identify the conflicting app (common: Spotlight, Alfred, other productivity tools)
+    2. Either:
+       - Change Ella's hotkey in Settings
+       - Change the other app's shortcut
+    3. Use a less common key combination
+  </Accordion>
+
+  <Accordion title="Caps Lock as hotkey not working">
+    **Solution:**
+    1. First, disable Caps Lock in System Settings:
+       - **System Settings** → **Keyboard** → **Keyboard Shortcuts** → **Modifier Keys**
+       - Set Caps Lock to "No Action"
+    2. Then set Caps Lock as hotkey in Ella Settings
+    3. Restart Ella if needed
+  </Accordion>
+</AccordionGroup>
+
+---
+
+## Transcription Issues
+
+<AccordionGroup>
+  <Accordion title="Poor transcription accuracy">
+    **Solutions:**
+    1. Check microphone positioning (6-12 inches from mouth)
+    2. Reduce background noise
+    3. Speak clearly at a natural pace
+    4. Add frequently misheard words to dictionary
+    5. Check microphone input level in System Settings
+  </Accordion>
+
+  <Accordion title="Transcription not appearing">
+    **Possible causes:**
+    - Accessibility permission issue
+    - Target application blocking input
+    - Cursor not in a text field
+
+    **Solutions:**
+    1. Verify accessibility permission
+    2. Click into a text field before dictating
+    3. Try a different application (e.g., TextEdit)
+    4. Restart Ella
+  </Accordion>
+
+  <Accordion title="Transcription appears in wrong place">
+    **Cause:** Cursor moved during transcription.
+
+    **Solution:**
+    - Keep cursor in position while speaking
+    - Wait for transcription to complete before clicking elsewhere
+  </Accordion>
+
+  <Accordion title="Technical terms not recognized">
+    **Solution:**
+    Add terms to your custom dictionary:
+    1. Go to Settings → Dictionary
+    2. Click **Add New**
+    3. Enter the term exactly as you want it transcribed
+
+    See [Dictionary](/features/dictionary) guide.
+  </Accordion>
+
+  <Accordion title="Long delay before text appears">
+    **Possible causes:**
+    - Slow internet connection
+    - Large transcription processing
+
+    **Solutions:**
+    1. Check your internet connection
+    2. Try shorter dictation segments
+    3. If persistent, contact support
+  </Accordion>
+</AccordionGroup>
+
+---
+
+## Audio Issues
+
+<AccordionGroup>
+  <Accordion title="Ella doesn't hear anything">
+    **Solutions:**
+    1. Check microphone permission in System Settings
+    2. Verify correct mic selected in Ella Settings → General → Preferred Microphone
+    3. Test mic in other applications
+    4. Check mic isn't muted or unplugged
+    5. Try a different microphone
+  </Accordion>
+
+  <Accordion title="Audio sounds distorted">
+    **Solutions:**
+    1. Move mic farther from mouth (reduce plosives)
+    2. Lower microphone input level
+    3. Check for physical microphone damage
+    4. Try a different audio input
+  </Accordion>
+
+  <Accordion title="External microphone not recognized">
+    **Solutions:**
+    1. Verify mic appears in System Settings → Sound → Input
+    2. Check USB connection or Bluetooth pairing
+    3. Try different USB port
+    4. Check manufacturer drivers if needed
+  </Accordion>
+</AccordionGroup>
+
+---
+
+## Account Issues
+
+<AccordionGroup>
+  <Accordion title="Can't sign in">
+    **Solutions:**
+    1. Verify email address is correct
+    2. Reset password via "Forgot Password"
+    3. Check internet connection
+    4. Try signing out completely, then back in
+    5. Clear app cache and restart
+  </Accordion>
+
+  <Accordion title="'Email already registered' error">
+    **Cause:** Account exists with that email.
+
+    **Solution:**
+    Use "Forgot Password" to recover access to existing account.
+  </Accordion>
+
+  <Accordion title="Session expires frequently">
+    **Solutions:**
+    1. Update Ella to latest version
+    2. Check for keychain issues (Keychain Access app)
+    3. Sign out and back in
+    4. Contact support if persistent
+  </Accordion>
+</AccordionGroup>
+
+---
+
+## Subscription Issues
+
+<AccordionGroup>
+  <Accordion title="Pro features not active after payment">
+    **Solutions:**
+    1. Wait a few minutes — activation can take time
+    2. Sign out and back in
+    3. Check Settings → Plans & Billing for subscription status
+    4. Verify payment completed (check email for receipt)
+    5. Contact support with payment confirmation
+  </Accordion>
+
+  <Accordion title="Charged but showing as Basic">
+    **Solutions:**
+    1. Sign out and back in to refresh account status
+    2. Check for receipt email to confirm payment
+    3. Contact support with:
+       - Email address
+       - Payment date
+       - Last 4 digits of card
+  </Accordion>
+
+  <Accordion title="Can't update payment method">
+    **Solutions:**
+    1. Verify card is valid and not expired
+    2. Try a different browser for the payment portal
+    3. Contact support to update manually
+  </Accordion>
+</AccordionGroup>
+
+---
+
+## Performance Issues
+
+<AccordionGroup>
+  <Accordion title="Ella using too much CPU">
+    **Solutions:**
+    1. Update to latest version
+    2. Restart Ella
+    3. Check for stuck processes (Activity Monitor)
+    4. Report to support with system info
+  </Accordion>
+
+  <Accordion title="Mac running hot with Ella">
+    **Solutions:**
+    1. Likely a bug — restart Ella
+    2. Update to latest version
+    3. Check Activity Monitor for high CPU
+    4. Contact support if persistent
+  </Accordion>
+
+  <Accordion title="Ella not responding">
+    **Solutions:**
+    1. Force quit: **⌘ + Option + Escape** → select Ella → Force Quit
+    2. Relaunch from Applications
+    3. If persistent, reinstall Ella
+  </Accordion>
+</AccordionGroup>
+
+---
+
+## Still Need Help?
+
+If you've tried the solutions above and still have issues:
+
+<CardGroup cols={2}>
+  <Card title="Check FAQ" icon="circle-question" href="/support/faq">
+    Browse frequently asked questions
+  </Card>
+  <Card title="Contact Support" icon="envelope" href="/support/contact">
+    Reach out to our team
+  </Card>
+</CardGroup>
+
+### When Contacting Support
+
+Please include:
+- macOS version (Apple menu → About This Mac)
+- Ella version (Ella menu → About Ella)
+- Description of the issue
+- Steps to reproduce
+- Any error messages (screenshots help)

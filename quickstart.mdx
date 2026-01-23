@@ -1,80 +1,293 @@
 ---
-title: "Quickstart"
-description: "Start building awesome documentation in minutes"
+title: "Quick Start"
+description: "Get started with Ella in under 2 minutes and make your first dictation."
 ---
 
-## Get started in three steps
+## Prerequisites
 
-Get your documentation site running locally and make your first customization.
+Before installing Ella, ensure you have:
 
-### Step 1: Set up your local environment
+- macOS 13.1 (Ventura) or later
+- A working microphone (built-in or external)
+- An internet connection for transcription
 
-<AccordionGroup>
-  <Accordion icon="copy" title="Clone your docs locally">
-    During the onboarding process, you created a GitHub repository with your docs content if you didn't already have one. You can find a link to this repository in your [dashboard](https://dashboard.mintlify.com).
+<Info>
+  Ella is currently available for macOS only. Windows support is coming soon.
+</Info>
+
+---
+
+## Installation
+
+<Steps>
+  <Step title="Download Ella">
+    Visit [heyella.co](https://www.heyella.co/) and download the latest version for your Mac.
+  </Step>
+
+  <Step title="Install the App">
+    Open the downloaded `.dmg` file and drag Ella to your Applications folder.
+
+    {/* Screenshot of DMG installation */}
+    <Frame>
+      <img src="/images/ella-dmg-drop.gif" alt="Drag Ella to Applications" />
+    </Frame>
+  </Step>
+
+  <Step title="Launch Ella">
+    Open Ella from your Applications folder. On first launch, you'll see the Ella icon appear in your menu bar.
+
+    <Note>
+      macOS may ask you to confirm opening an app downloaded from the internet. Click **Open** to continue. If blocked, go to **System Settings** → **Privacy & Security** and click **Open Anyway**.
+    </Note>
+  </Step>
+
+  <Step title="Grant Permissions">
+    You may be prompted for Microphone Access at app launch:
+
+    - **Microphone Access**: Required for voice input
+    <Frame>
+      <img src="/images/ella-mic.gif" alt="Grant Ella necessary permissions" />
+    </Frame>
+  </Step>
+
+  <Step title="Create Your Account">
+    Sign up or log in to your Ella account. You can start with the free Basic plan immediately.
+
+    {/* PLACEHOLDER: Screenshot of login/signup screen */}
+    <Frame>
+      <img src="/images/sign-in.png" alt="Create your Ella account" />
+    </Frame>
+  </Step>
+</Steps>
+
+---
+
+## Onboarding
+
+After launching Ella for the first time, you'll go through a quick onboarding process to personalize your experience.
+
+<Steps>
+  <Step title="Welcome">
+    You'll see a welcome screen introducing Ella. Click **Get Started** to begin the setup process.
+
+    {/* PLACEHOLDER: Screenshot of welcome screen */}
+    <Frame>
+      <img src="/images/onboarding-start.png" alt="Ella welcome screen" />
+    </Frame>
+  </Step>
+
+  <Step title="Tell Us About Yourself">
+    Ella asks two questions to personalize your experience:
+
+    1. **What do you do for work?** — Select your role (e.g., Developer, Designer, Writer, etc.)
+    2. **Where will you use Ella?** — Choose your primary use cases (Email, Code, Documents, Messages, AI Chat)
+
+    {/* PLACEHOLDER: Screenshot of profile setup */}
+    <Frame>
+      <img src="/images/onboarding-profile.png" alt="Profile setup screen" />
+    </Frame>
+
+    <Tip>
+      You can select multiple use cases. This helps Ella optimize for your workflow.
+    </Tip>
+  </Step>
+
+  <Step title="Privacy Commitment">
+    Ella takes your privacy seriously. You'll see our commitment to:
+
+    - **Voice never stored** — Audio is processed and immediately discarded
+    - **Transcriptions stay on your device** — Your history is local only
+    - **Zero cloud storage** — We can't access your dictations
+    - **No AI training** — Your data is never used to train models
+
+    {/* PLACEHOLDER: Screenshot of privacy screen */}
+    <Frame>
+      <img src="/images/onboarding-privacy.png" alt="Privacy commitment screen" />
+    </Frame>
+  </Step>
+
+  <Step title="Grant Permissions">
+    Ella needs two permissions to work properly:
     
-    To clone the repository locally so that you can make and preview changes to your docs, follow the [Cloning a repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository) guide in the GitHub docs.
-  </Accordion>
-  <Accordion icon="rectangle-terminal" title="Start the preview server">
-    1. Install the Mintlify CLI: `npm i -g mint`
-    2. Navigate to your docs directory and run: `mint dev`
-    3. Open `http://localhost:3000` to see your docs live!
+    <Warning>
+      Both permissions are required. Without microphone access, Ella can't hear you. Without accessibility access, Ella can't insert text.
+    </Warning>
     
-    <Tip>Your preview updates automatically as you edit files.</Tip>
-  </Accordion>
-</AccordionGroup>
-
-### Step 2: Deploy your changes
-
-<AccordionGroup>
-  <Accordion icon="github" title="Install our GitHub app">
-    Install the Mintlify GitHub app from your [dashboard](https://dashboard.mintlify.com/settings/organization/github-app).
+    1. **Microphone Access** — Click **Allow** when prompted, then test your mic by speaking for a moment
+  
+    <Frame>
+      <img src="/images/onboarding-mic.png" alt="Permissions setup screen" />
+    </Frame>
     
-    Our GitHub app automatically deploys your changes to your docs site, so you don't need to manage deployments yourself.
-</Accordion>
-<Accordion icon="palette" title="Update your site name and colors">
-    For a first change, let's update the name and colors of your docs site.
+    <Frame>
+      <img src="/images/ella-mic.gif" alt="Grant Ella necessary permissions" />
+    </Frame>
 
-    1. Open `docs.json` in your editor.
-    2. Change the `"name"` field to your project name.
-    3. Update the `"colors"` to match your brand.
-    4. Save and see your changes instantly at `http://localhost:3000`.
 
-    <Tip>Try changing the primary color to see an immediate difference!</Tip>
-  </Accordion>
-</AccordionGroup>
+    2. **Accessibility Access** — Required so Ella can type text into your applications
 
-### Step 3: Go live
+    <Frame>
+      <img src="/images/onboarding-accessability.png" alt="Permissions setup screen" />
+    </Frame>
+    
+    <Frame>
+      <img src="/images/ella-accessability.gif" alt="Grant Ella necessary permissions" />
+    </Frame>
 
-<Accordion icon="rocket" title="Publish your docs">
-  1. Commit and push your changes.
-  2. Your docs will update and be live in moments!
-</Accordion>
+    <Warning>
+      Without accessibility permission, Ella cannot insert text into applications. Enable it in **System Settings** → **Privacy & Security** → **Accessibility**.
+    </Warning>
 
-## Next steps
 
-Now that you have your docs running, explore these key features:
+  </Step>
+
+  <Step title="Configure Hotkeys">
+    Set up your preferred activation shortcuts for two dictation modes:
+
+    | Mode | Default Shortcut | How It Works |
+    |------|------------------|--------------|
+    | **Push-to-Talk** | `Fn` | Hold to record, release to transcribe |
+    | **Hands-Free** | `Ctrl + Space` | Press once to start, press again to stop |
+
+    {/* PLACEHOLDER: Screenshot of hotkey configuration */}
+    <Frame>
+      <img src="/images/onboarding-keys.png" alt="Hotkey configuration screen" />
+    </Frame>
+
+    <Tip>
+      Click on any shortcut to customize it. You can change these later in Settings → General.
+    </Tip>
+  </Step>
+
+  <Step title="Practice Dictation">
+    Try both dictation modes with interactive practice exercises:
+
+    1. **Push-to-Talk Practice** — Hold your hotkey and dictate a response to a sample Slack message
+
+    <Frame>
+      <img src="/images/onboarding-test1.png" alt="Practice dictation screen" />
+    </Frame>
+    
+    2. **Hands-Free Practice** — Toggle recording on/off while composing a sample email reply
+
+    <Frame>
+      <img src="/images/onboarding-test2.png" alt="Practice dictation screen" />
+    </Frame>
+    
+    <Note>
+      Take your time with practice. This helps you get comfortable with both modes before using Ella in real applications.
+    </Note>
+  </Step>
+
+  <Step title="Start Your Free Trial">
+    You're all set! Your **7-day free Pro trial** is automatically activated with:
+
+    - Unlimited words
+    - Optimized transcription speed
+    - Smart memory features
+    - Advanced formatting
+
+    No credit card required. Click **Start Using Ella** to begin dictating.
+
+    {/* PLACEHOLDER: Screenshot of trial activation */}
+    <Frame>
+      <img src="/images/onboarding-done.png" alt="Free trial activation screen" />
+    </Frame>
+  </Step>
+</Steps>
+
+---
+
+## Your First Dictation
+
+<Steps>
+  <Step title="Open Any Text Field">
+    Click into any text field — a document, email, browser, or notes app.
+  </Step>
+
+  <Step title="Activate Ella">
+    Press and hold the default hotkey: **Right Option (⌥) key**
+
+    You'll see the Ella indicator appear, showing that Ella is listening.
+
+  </Step>
+
+  <Step title="Speak Naturally">
+    While holding the key, speak what you want to type. For example:
+
+    > "Hello, this is my first dictation with Ella."
+  </Step>
+
+  <Step title="Release to Insert">
+    Release the hotkey. Your spoken words will be transcribed and inserted at your cursor position.
+  </Step>
+</Steps>
+
+<Tip>
+  Try saying punctuation naturally: "Hello comma this is a test period" will produce "Hello, this is a test."
+</Tip>
+
+---
+
+## Updating Ella
+
+Ella automatically checks for updates. When an update is available:
+
+1. You'll see a notification in the app
+2. Click **Update** to download and install
+3. Ella will restart with the new version
+
+To check manually: Click the Ella menu bar icon → **Check for Updates**
+
+---
+
+## Uninstalling Ella
+
+<Steps>
+  <Step title="Quit Ella">
+    Click the Ella menu bar icon → **Quit Ella**
+  </Step>
+
+  <Step title="Remove the App">
+    Open Finder → Applications, find Ella, and drag it to the Trash.
+  </Step>
+</Steps>
+
+---
+
+## What's Next?
 
 <CardGroup cols={2}>
-
-<Card title="Write Content" icon="pen-to-square" href="/essentials/markdown">
-  Learn MDX syntax and start writing your documentation.
-</Card>
-
-<Card title="Customize style" icon="palette" href="/essentials/settings">
-  Make your docs match your brand perfectly.
-</Card>
-
-<Card title="Add code examples" icon="square-code" href="/essentials/code">
-  Include syntax-highlighted code blocks.
-</Card>
-
-<Card title="API documentation" icon="code" href="/api-reference/introduction">
-  Auto-generate API docs from OpenAPI specs.
-</Card>
-
+  <Card
+    title="Dictation"
+    icon="microphone"
+    href="/features/dictation"
+  >
+    Learn about dictation modes and hotkeys
+  </Card>
+  <Card
+    title="Dictionary"
+    icon="book"
+    href="/features/dictionary"
+  >
+    Teach Ella your terminology
+  </Card>
+  <Card
+    title="Transcripts"
+    icon="clock-rotate-left"
+    href="/features/transcription"
+  >
+    View and manage your history
+  </Card>
+  <Card
+    title="Plans & Pricing"
+    icon="credit-card"
+    href="/settings/plans-pricing"
+  >
+    Understand your usage limits
+  </Card>
 </CardGroup>
 
-<Note>
-  **Need help?** See our [full documentation](https://mintlify.com/docs) or join our [community](https://mintlify.com/community).
-</Note>
+## Need Help?
+
+If you encounter any issues during setup, check our [Troubleshooting Guide](/support/troubleshooting) or [Contact Support](/support/contact).

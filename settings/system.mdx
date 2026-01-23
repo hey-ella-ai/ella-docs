@@ -1,0 +1,103 @@
+---
+title: "System"
+description: "Configure Ella's system behavior including startup options, dock visibility, and notifications."
+---
+
+Configure how Ella integrates with your Mac's system settings and notifications.
+
+<Frame>
+    <img src="/images/setting-system.png" alt="General Settings" />
+</Frame>
+
+## System Settings
+
+### Launch at Login
+
+Control whether Ella starts automatically when you log into your Mac.
+
+| Setting | Behavior |
+|---------|----------|
+| Enabled | Ella starts automatically at login |
+| Disabled | You must manually open Ella |
+
+<Tip>
+  Enable Launch at Login if you use Ella frequently. This ensures it's always ready when you need it.
+</Tip>
+
+### Show App in Dock
+
+Control whether Ella appears in your Mac's Dock when the main window is closed.
+
+| Setting | Behavior |
+|---------|----------|
+| Enabled | Ella icon remains visible in Dock |
+| Disabled | Ella runs only in the menu bar |
+
+<Note>
+  Even with this disabled, Ella remains accessible from the menu bar icon in the top-right of your screen.
+</Note>
+
+---
+
+## Notifications
+
+Configure how Ella notifies you about dictation activity.
+
+### Transcription Sound
+
+Play an audio sound when transcription finishes processing.
+
+| Setting | Effect |
+|---------|--------|
+| Enabled | Plays a sound when transcription is complete |
+| Disabled | No sound plays |
+
+This provides audio confirmation that your dictation has been processed and inserted.
+
+### Transcription Notification
+
+Show a macOS notification when transcription completes.
+
+| Setting | Effect |
+|---------|--------|
+| Enabled | Shows system notification with transcribed text |
+| Disabled | No notification shown |
+
+<Note>
+  Useful when you want visual confirmation of what was transcribed, especially for longer dictations.
+</Note>
+
+### Recording Status
+
+Notify when recording starts and stops.
+
+| Setting | Effect |
+|---------|--------|
+| Enabled | Shows notifications for recording state changes |
+| Disabled | No recording status notifications |
+
+This helps you know when Ella is actively listening, which can be useful in noisy environments.
+
+---
+
+## Notification Permissions
+
+Ella uses macOS system notifications. If you're not seeing notifications:
+
+1. Open **System Settings** → **Notifications**
+2. Find **Ella** in the app list
+3. Ensure notifications are enabled
+4. Configure your preferred alert style (Banners or Alerts)
+
+---
+
+## Related
+
+<CardGroup cols={2}>
+  <Card title="General" icon="gear" href="/settings/general">
+    Configure hotkeys and audio
+  </Card>
+  <Card title="Privacy" icon="shield" href="/settings/privacy">
+    Manage your data
+  </Card>
+</CardGroup>
